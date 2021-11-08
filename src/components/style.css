@@ -77,11 +77,12 @@ body {
 .third {
   display: flex;
   height: 100px;
+  font-family: "Montserrat", sans-serif;
 }
 .width {
   display: flex;
   align-items: center;
-  width: 162px;
+  width: 25vw;
   font-weight: 600;
   font-size: 25px;
 }
@@ -145,5 +146,8 @@ body {
   .third {
     flex-wrap: wrap;
     font-family: "Montserrat", sans-serif;
+  }
+  .width {
+    width: 50vw;
   }
 }

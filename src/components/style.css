@@ -1,5 +1,5 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Raleway&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,12 @@
   --fourth: #ffe459;
 }
 body {
-  background-color: var(--primary);
+  background: url(https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722376/after_noon.png?compress=1&resize=400x300);
+  /* https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722375/night.png?compress=1&resize=400x300 */
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .center {
   display: flex;
@@ -89,4 +94,56 @@ body {
 .third-text {
   padding-left: 30px;
   font-size: 20px;
+}
+
+/* make responsive */
+@media screen and (max-width: 750px) {
+  body {
+    background: url(https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722376/after_noon.png);
+    /* https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722375/night.png */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    zoom: 94%;
+  }
+  .container {
+    width: 95vw;
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .input-Container {
+    width: 100vw;
+  }
+  .input-Container input {
+    height: 30px;
+    width: 70vw;
+  }
+  .input-Container button {
+    height: 48px;
+    width: 25vw;
+  }
+  .Display-container {
+    width: 100vw;
+    border-radius: 0px;
+    height: 460px;
+  }
+  .second {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+  }
+  .second-child-1 {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .second-child-2 {
+    font-family: "Montserrat", sans-serif;
+  }
+  .third {
+    flex-wrap: wrap;
+    font-family: "Montserrat", sans-serif;
+  }
 }

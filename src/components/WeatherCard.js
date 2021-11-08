@@ -57,7 +57,13 @@ const WeatherCard = (props) => {
             padding: "0px 70px 0px 10px",
           }}
         >
-          <span style={{ color: "white", fontSize: "60px" }}>{temp}°</span>
+          <span style={{ color: "white", fontSize: "60px" }}>
+            <i
+              style={{ fontSize: "50px", paddingRight: "15px" }}
+              className="wi wi-thermometer"
+            ></i>
+            {temp}°
+          </span>
           <div
             style={{
               color: "white",

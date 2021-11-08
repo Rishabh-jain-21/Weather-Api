@@ -13,28 +13,28 @@ const Temp = () => {
   // API called and data recieved
   const getWeatherData = async () => {
     try {
-      let url = `https://api.openweathermap.org/data/2.5/weather?q=${inputText}&units=metric&appid=abd793a49182af06d9e646d3b0ab6d1c`;
-      const response = await fetch(url);
-      const data = await response.json();
-      console.log(data);
+      // let url = `https://api.openweathermap.org/data/2.5/weather?q=${inputText}&units=metric&appid=abd793a49182af06d9e646d3b0ab6d1c`;
+      // const response = await fetch(url);
+      // const data = await response.json();
+      // console.log(data);
 
-      // object destructuring in api
-      const { temp, humidity, pressure } = data.main;
-      const { main: weathermood } = data.weather[0];
-      const { name } = data;
-      const { speed } = data.wind;
-      const { country, sunset } = data.sys;
+      // // object destructuring in api
+      // const { temp, humidity, pressure } = data.main;
+      // const { main: weathermood } = data.weather[0];
+      // const { name } = data;
+      // const { speed } = data.wind;
+      // const { country, sunset } = data.sys;
 
       // taking all objects to use in app
       const myWeatherInfo = {
-        temp,
-        humidity,
-        pressure,
-        weathermood,
-        name,
-        speed,
-        country,
-        sunset,
+        temp: 25.3,
+        humidity: 28,
+        pressure: 1015,
+        weathermood: "Sunny",
+        name: "karnal",
+        speed: 94,
+        country: "In",
+        sunset: 11778789987,
       };
       setTempData(myWeatherInfo);
       console.log(tempData);

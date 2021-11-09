@@ -45,7 +45,6 @@ const WeatherCard = (props) => {
 
   return (
     <div className="Display-container">
-      {console.log(props)}
       <div className="first center">
         <i style={{ fontSize: 60 }} className={`wi ${weatherIcon}`}></i>
       </div>

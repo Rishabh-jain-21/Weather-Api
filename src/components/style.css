@@ -11,9 +11,18 @@
   --tertiory: #f43b86;
   --fourth: #ffe459;
 }
-body {
+.top-container1 {
+  width: 100vw;
+  height: 100vh;
   background: url(https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722376/after_noon.png?compress=1&resize=400x300);
-  /* https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722375/night.png?compress=1&resize=400x300 */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.top-container2 {
+  width: 100vw;
+  height: 100vh;
+  background: url(https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722375/night.png?compress=1&resize=400x300);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -23,6 +32,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.9;
 }
 .container {
   width: 100vw;
@@ -99,15 +109,27 @@ body {
 
 /* make responsive */
 @media screen and (max-width: 750px) {
-  body {
+  .top-container1 {
+    width: 106.3vw;
+    height: 106.3vh;
     background: url(https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722376/after_noon.png);
-    /* https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722375/night.png */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    zoom: 94%;
+  }
+  .top-container2 {
+    width: 106.3vw;
+    height: 106.3vh;
+    background: url(https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722375/night.png);
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     zoom: 94%;
   }
   .container {
+    opacity: 0.85;
     width: 95vw;
     padding: 20px;
     align-items: flex-start;

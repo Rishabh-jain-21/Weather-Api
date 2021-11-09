@@ -50,19 +50,23 @@ const Temp = () => {
     getWeatherData();
   }, []);
 
+  //wallpaper change logic
+  var systemTime = new Date().getHours();
   return (
-    <div className="container center">
-      <div className="container-1 ">
-        <div className="input-Container center">
-          <input
-            type="text"
-            placeholder="Enter Country or City"
-            value={inputText}
-            onChange={setInput}
-          />
-          <button onClick={getWeatherData}>Search</button>
+    <div className={systemTime >= 19 ? "top-container2" : "top-container1"}>
+      <div className="container center">
+        <div className="container-1 ">
+          <div className="input-Container center">
+            <input
+              type="text"
+              placeholder="Enter Country or City"
+              value={inputText}
+              onChange={setInput}
+            />
+            <button onClick={getWeatherData}>Search</button>
+          </div>
+          <WeatherCard tempData={tempData} />
         </div>
-        <WeatherCard tempData={tempData} />
       </div>
     </div>
   );
